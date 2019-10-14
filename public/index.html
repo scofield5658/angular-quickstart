@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Angular App</title>
+  <link href="assets/main.css" rel="stylesheet">
+</head>
+<body ng-app="main">
+  <div class="nav">
+    <a ui-sref="hello" ui-sref-active="active">Hello</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+    <a ui-sref="people" ui-sref-active="active">People</a>
+  </div>
+  <ui-view></ui-view>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
