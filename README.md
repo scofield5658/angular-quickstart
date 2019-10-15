@@ -19,5 +19,5 @@
 3. Build
 
   ```bash
-  $ yarn build:prod
+  $ yarn build
   ```
