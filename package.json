@@ -7,9 +7,8 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "build:prod": "webpack --config webpack-production.config.js --progress --colors",
-    "build:dev": "webpack --config webpack.config.js --progress --colors",
     "start": "webpack-serve --config webpack-dev-server.config.js --port 2992",
+    "build": "webpack --config webpack-production.config.js --progress --colors",
     "lint": "eslint ./src/"
   },
   "author": "guozhi",

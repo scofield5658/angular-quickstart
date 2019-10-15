@@ -1,12 +1,12 @@
 import angular from 'angular';
 import '@uirouter/angularjs';
-
+import { Visualizer } from '@uirouter/visualizer';
 import 'angular/angular-csp.css';
 import './index.scss';
 
 const myApp = angular.module('main', ['ui.router']);
-require('./home/components');
-require('./home/services');
+require('./components');
+require('./services');
 
 myApp.config(($stateProvider) => {
   const states = [
@@ -39,4 +39,6 @@ myApp.config(($stateProvider) => {
   });
 });
 
-myApp.run(() => {});
+myApp.run(($uiRouter) => {
+  $uiRouter.plugin(Visualizer);
+});

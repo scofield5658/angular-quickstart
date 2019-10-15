@@ -257,7 +257,7 @@ module.exports = function makeWebpackConfig(options) {
         'node_modules',
       ],
       extensions: ['.web.js', '.js', '.jsx', '.ts', '.tsx'],
-      mainFields: ['browser', 'module', 'jsnext:main', 'main'],
+      mainFields: ['browser', 'module', 'main'],
       alias,
     },
     plugins,
